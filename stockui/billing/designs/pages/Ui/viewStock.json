@@ -1,0 +1,268 @@
+[
+    {
+        "id": "sd_vjG0Z1Ofbd4OykYP",
+        "type": "tab",
+        "createdDate": "2022-12-27T05:29:57.745Z",
+        "label": "viewStock",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 1,
+        "generateNext": true,
+        "serviceName": "viewStockComponent"
+    },
+    {
+        "id": "sd_qr9bEvVeFB5tN2p4",
+        "type": "OnInit",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_qr9bEvVeFB5tN2p4",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_RLgkmrAlQNk6p2rl"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "viewStockComponent"
+    },
+    {
+        "id": "sd_RLgkmrAlQNk6p2rl",
+        "type": "PageVariables",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_RLgkmrAlQNk6p2rl",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_m2Q1gnCk4eB81Syd"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "viewStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_m2Q1gnCk4eB81Syd",
+        "type": "Script",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.dataSource = new MatTableDataSource([\n  {\n    itemid: 1, itemname: 'Le Jeans', category: 'Jeans', brandname: 'Vanheusen', size: 'M', amount: 2349,dateentered: '01/04/2001',timeenterd: '12:00AM'  }\n  ,\n]);",
+        "functionName": "sd_eJuzOUTYKNgXaqdz_1",
+        "category": "Function",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "sd_u7h0yz75TpJwO4Qo"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "viewStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_u7h0yz75TpJwO4Qo",
+        "type": "PageVariables",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "tableData",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "dataSource"
+                }
+            }
+        ],
+        "functionName": "sd_E9QbOlnVduPNV5MO_1",
+        "category": "Function",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "viewStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_gU2iEDTfPbrbgnit",
+        "type": "AfterViewInit",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "ngAfterViewInit",
+        "category": "Lifecycle Events",
+        "x": 65,
+        "y": 250,
+        "wires": [
+            [
+                "sd_U3eZCUbJpVYeIkR0"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "viewStockComponent"
+    },
+    {
+        "id": "sd_U3eZCUbJpVYeIkR0",
+        "type": "ViewPicker",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "childViewVariables": [
+            {
+                "key": {
+                    "type": "literal",
+                    "value": "MatSort"
+                },
+                "defaultValue": "",
+                "isViewChildren": false
+            }
+        ],
+        "functionName": "sd_xKCCTWKzvgDN0rx7_1",
+        "category": "Function",
+        "x": 205,
+        "y": 250,
+        "wires": [
+            [
+                "sd_ZsByWbLVwILnuSec"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "viewStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ZsByWbLVwILnuSec",
+        "type": "Script",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "this.page.tableData.sort = this.MatSort;",
+        "functionName": "sd_2VNGqvcKee34lvOz_1",
+        "category": "Function",
+        "x": 345,
+        "y": 250,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "viewStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KDXPM8s8mkXU5o8U",
+        "type": "PageStart",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "",
+        "outputs": 1,
+        "flow_type": "sync",
+        "functionName": "sd_KDXPM8s8mkXU5o8U",
+        "category": "General",
+        "x": 220,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "viewStockComponent"
+    },
+    {
+        "id": "sd_bOBa2b3CE0zyV0of",
+        "type": "Script",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_bOBa2b3CE0zyV0of",
+        "category": "Function",
+        "x": 305,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "viewStockComponent"
+    },
+    {
+        "id": "sd_AvwP7YsGiDDJjyeV",
+        "type": "HttpRequest",
+        "z": "sd_vjG0Z1Ofbd4OykYP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "this.page./",
+        "urlMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "/"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.viewStock",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "viewStock"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_AvwP7YsGiDDJjyeV",
+        "category": "HTTP",
+        "x": 385,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "viewStockComponent"
+    }
+]

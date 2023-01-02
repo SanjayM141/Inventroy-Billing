@@ -1,0 +1,14 @@
+[
+    {
+        "type": "tab",
+        "id": "SSD_SERVICE_ID_sd_M3iqfVSM62fxZpwj",
+        "disabled": false,
+        "info": "",
+        "label": "login",
+        "createdDate": "2022-12-30T04:26:18.092Z",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "login",
+        "relativeParentPath": ""
+    }
+]

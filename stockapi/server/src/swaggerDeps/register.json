@@ -1,0 +1,29 @@
+{
+    "/register": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [
+                {
+                    "in": "body",
+                    "name": "register",
+                    "required": true,
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "register": {
+                                "$ref": "#/definitions/stock ~ register"
+                            }
+                        }
+                    }
+                }
+            ],
+            "responses": {},
+            "tags": [
+                "register"
+            ]
+        }
+    }
+}

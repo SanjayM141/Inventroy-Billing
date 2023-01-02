@@ -1,0 +1,18 @@
+{
+    "classes": [
+        "height-100",
+        "cursor",
+        "addbut",
+        "table",
+        "table1",
+        "d",
+        "sidenav-open",
+        "padding-1",
+        "example-sidenav",
+        "version",
+        "router_base",
+        "router_content",
+        "active-menu",
+        "inactive-menu"
+    ]
+}

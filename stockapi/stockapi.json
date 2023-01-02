@@ -1,0 +1,13 @@
+{
+    "displayName": "stockapi",
+    "appName": "stockapi",
+    "description": "stockapi",
+    "lastModified": "2022-12-29T06:53:01.500Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2022-12-29T06:53:01.366Z",
+    "analyticsId": "f2e6ef62-dafb-49b1-9488-1a016200601b",
+    "createdStudioVersion": "8.3.1"
+}

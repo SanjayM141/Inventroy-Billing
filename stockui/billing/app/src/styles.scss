@@ -1,0 +1,73 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+.height-100{
+    height:100vh;
+    background-color: rgba(255, 153, 0, 0.918);
+}
+.cursor{
+    cursor:pointer;
+    position: sticky;
+    margin-top: 9em;
+}
+.addbut{
+    background-color:blue;color:white;
+}
+.table{
+     border: 1px solid black;
+     position:fixed;width: 25%;float:left;
+     margin-top: 5em;margin-left: -20em;
+}
+.table1{
+     border: 1px solid black;
+     position:fixed;width: 60%;float:left;
+     margin-top: 15em;margin-left: -53em;
+}
+.d{
+    position: fixed;
+    
+    }
+.sidenav-open {
+    width: 150px;
+}
+
+.padding-1 {
+    padding: 1em;
+}
+
+.example-sidenav {
+  padding: 20px;  
+  width:fit-content;
+}
+
+.version{
+    display: flex;
+    align-self: unset;
+}
+
+.router_base{
+    margin: 1%;
+}
+
+.router_content{
+    margin : 1%;
+    margin-top: 2% ;
+}
+
+
+/***
+navigation-menu
+****/
+
+.active-menu {
+    background: rgba(186, 191, 199, 0.12);
+    color:  #00A758;
+    margin-bottom: 10px;
+}
+
+.inactive-menu {
+    color:  #B9B9C3;
+    margin-bottom: 10px;
+}

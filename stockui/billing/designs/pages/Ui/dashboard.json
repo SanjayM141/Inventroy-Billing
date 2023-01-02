@@ -1,0 +1,78 @@
+[
+    {
+        "id": "sd_EdpExdRHhC4IpTwG",
+        "type": "tab",
+        "createdDate": "2022-12-22T06:51:47.852Z",
+        "label": "dashboard",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "dashboardComponent"
+    },
+    {
+        "id": "sd_YZ9HxB6S06vvV0Sn",
+        "type": "OnInit",
+        "z": "sd_EdpExdRHhC4IpTwG",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_YZ9HxB6S06vvV0Sn",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_B1sRif2Qzd87yloD"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "dashboardComponent"
+    },
+    {
+        "id": "sd_B1sRif2Qzd87yloD",
+        "type": "PageVariables",
+        "z": "sd_EdpExdRHhC4IpTwG",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_B1sRif2Qzd87yloD",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_vOVlyGdJPkW36xVn"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "dashboardComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_vOVlyGdJPkW36xVn",
+        "type": "Script",
+        "z": "sd_EdpExdRHhC4IpTwG",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.menu = [{\n    iconName: 'dashboard' , \n    displayName: page.locales.keys.menu_case , \n    route: \"case\"  \n},\n{\n    iconName: 'work_outline' , \n    displayName: page.locales.keys.menu_process , \n    route: \"process\"  \n},\n{\n    iconName: 'Roles' , \n    displayName: page.locales.keys.menu_role, \n    route: \"roles\"  \n},\n{\n    iconName: 'group' , \n    displayName: page.locales.keys.menu_users , \n    route: \"users\"  \n},\n{\n    iconName: 'lock' , \n    displayName: page.locales.keys.menu_app_setting , \n    route: \"appsettings\"  \n}];",
+        "functionName": "sd_vOVlyGdJPkW36xVn",
+        "category": "Function",
+        "x": 300,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "dashboardComponent",
+        "generated": true
+    }
+]

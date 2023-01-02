@@ -1,0 +1,13 @@
+{
+    "displayName": "Billing",
+    "appName": "billing",
+    "description": "Billing-app",
+    "lastModified": "2022-12-20T07:28:34.928Z",
+    "imgSourcePath": "appIcon-1671521312360.jpg",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2022-12-20T07:28:32.349Z",
+    "analyticsId": "9d806507-8bb9-1874-9c62-05362ffb57ae",
+    "createdStudioVersion": "8.3.1"
+}

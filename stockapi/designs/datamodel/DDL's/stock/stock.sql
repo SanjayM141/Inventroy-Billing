@@ -1,0 +1,1 @@
+CREATE TABLE "stock" ("stock_id" SERIAL NOT NULL, "stock_name" text NOT NULL, "category_id" bigint NOT NULL, "date" TIMESTAMP WITH TIME ZONE NOT NULL, CONSTRAINT "PK_535f28fb720127de0997a5a866e" PRIMARY KEY ("stock_id"));

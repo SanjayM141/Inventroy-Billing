@@ -1,0 +1,13 @@
+{
+    "en": {
+        "localeId": "en",
+        "localeName": "English",
+        "isDefaultLanguage": true,
+        "properties": {
+            "menu_case": "Case",
+            "menu_process": "Process",
+            "menu_users": "Users",
+            "menu_role": "Roles"
+        }
+    }
+}

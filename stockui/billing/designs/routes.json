@@ -1,0 +1,27 @@
+{
+    "routes": [
+        {
+            "path": "dashboard",
+            "component": "dashboardComponent",
+            "redirectTo": ""
+        },
+        {
+            "path": "addStock",
+            "component": "addStockComponent"
+        },
+        {
+            "path": "viewStock",
+            "component": "viewStockComponent"
+        },
+        {
+            "path": "''",
+            "redirectTo": "dashboard",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

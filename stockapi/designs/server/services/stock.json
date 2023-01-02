@@ -1,0 +1,463 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "type": "tab",
+        "createdDate": "2022-12-29T07:18:17.659Z",
+        "label": "stock",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "stock",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_KFPKeaBneCkkJ1Rh",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "stock_input",
+        "path": "stock",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "post",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": true,
+        "dataModelIsArray": false,
+        "erd": "_DM_7xk3ge3t2",
+        "erdName": "stock",
+        "entity": "addstock",
+        "ref": "#/definitions/stock ~ addstock",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "sd_wrAu1YbatXKJmdjU"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock",
+        "functionName": "sd_KFPKeaBneCkkJ1Rh"
+    },
+    {
+        "id": "sd_wrAu1YbatXKJmdjU",
+        "type": "Switch",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "body.addstock.stock_name",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.body.addstock.stock_name",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_wrAu1YbatXKJmdjU",
+        "category": "Function",
+        "x": 245,
+        "y": 100,
+        "wires": [
+            [
+                "sd_rRHYTaygggCUdx4f"
+            ],
+            [
+                "sd_6QjQqdBKOyGwWalI"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_rRHYTaygggCUdx4f",
+        "type": "Switch",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "addorupdateswitch",
+        "property": "body.addstock.stock_id",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.body.addstock.stock_id",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num",
+                "gv": "0"
+            },
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num",
+                "gv": "0"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "addorupdateswitch",
+        "category": "Function",
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "sd_5GrElrGzuP4vtiUf"
+            ],
+            [
+                "sd_ZKVDbszJEakNT8TY"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_6QjQqdBKOyGwWalI",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_6QjQqdBKOyGwWalI",
+        "category": "Function",
+        "x": 285,
+        "y": 300,
+        "wires": [
+            [
+                "sd_nULSXp5wz7XFJOgU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_5GrElrGzuP4vtiUf",
+        "type": "insert",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "db1",
+        "erd": "_DM_7xk3ge3t2",
+        "entityId": "_EN_008wau1q9g",
+        "_UI_entityName": "addstock",
+        "dbConfigId": "sd_tiU3Q1ghCej28eZm",
+        "insertObject": "bh.input.body.addstock",
+        "resultMapping": "bh.local.result",
+        "functionName": "db1",
+        "category": "Data Model",
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "sd_WxqnJfiLOEz8J5pg"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "insertObject": {
+                "type": "bh.input",
+                "value": "body.addstock",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_WxqnJfiLOEz8J5pg",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.response = {\n    code: \"TS_001\",\n    tittle: \"Create\",\n    status: 200,\n    message: \"stock Created Sucessfully\" ,\n    hasError: false,\n    response :bh.local.result\n}\n\n \n\n\n",
+        "functionName": "sd_WxqnJfiLOEz8J5pg",
+        "category": "Function",
+        "x": 605,
+        "y": 80,
+        "wires": [
+            [
+                "sd_qOluJRZlPpn19Dei"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_qOluJRZlPpn19Dei",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "response",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.response",
+            "send": "bh.local.response"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_qOluJRZlPpn19Dei",
+        "category": "HTTP",
+        "x": 700,
+        "y": 80,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_xOyxSQPmrDBQZagX",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.response = {\n    code: \"TS_001\",\n    tittle: \"Create\",\n    status: 200,\n    message: \"stock update Sucessfully\" ,\n    hasError: false,\n    response :bh.local.result\n}\n\n ",
+        "functionName": "sd_xOyxSQPmrDBQZagX",
+        "category": "Function",
+        "x": 645,
+        "y": 160,
+        "wires": [
+            [
+                "sd_JuGAUJ4XyWd4S3W5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_nULSXp5wz7XFJOgU",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "HTTP out",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.result",
+            "send": "bh.local.result"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "hTTPOut",
+        "category": "HTTP",
+        "x": 420,
+        "y": 300,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_JuGAUJ4XyWd4S3W5",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "response",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.response",
+            "send": "bh.local.response"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_JuGAUJ4XyWd4S3W5",
+        "category": "HTTP",
+        "x": 765,
+        "y": 160,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_ZKVDbszJEakNT8TY",
+        "type": "update",
+        "z": "SSD_SERVICE_ID_sd_hDrpxz3wi1JIaJDd",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "erd": "_DM_7xk3ge3t2",
+        "entityId": "_EN_008wau1q9g",
+        "_UI_entityName": "addstock",
+        "dbConfigId": "sd_tiU3Q1ghCej28eZm",
+        "operationType": "updateByID",
+        "filterBy": "",
+        "updateObject": "bh.input.body.stock",
+        "resultMapping": "bh.local.result",
+        "functionName": "sd_ZKVDbszJEakNT8TY",
+        "category": "Data Model",
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "sd_xOyxSQPmrDBQZagX"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "filterBy": {
+                "type": "bh",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            },
+            "updateObject": {
+                "type": "bh.input",
+                "value": "body.stock",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {
+            "filterBy": true
+        },
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    }
+]

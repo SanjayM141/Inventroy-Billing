@@ -1,0 +1,216 @@
+[
+    {
+        "id": "sd_acIjEnZ8Rxizndhu",
+        "type": "tab",
+        "createdDate": "2022-12-22T14:50:13.001Z",
+        "label": "addStock",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 5,
+        "generateNext": true,
+        "serviceName": "addStockComponent"
+    },
+    {
+        "id": "sd_RiSehgAurTWIkLjx",
+        "type": "OnInit",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "inputVariables": [],
+        "localVariables": [],
+        "outputVariables": [],
+        "pageVariables": [],
+        "functionName": "sd_RiSehgAurTWIkLjx",
+        "category": "Lifecycle Events",
+        "x": 65,
+        "y": 270,
+        "wires": [
+            [
+                "sd_uFMmF5OBgzfYIYBv"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "addStockComponent"
+    },
+    {
+        "id": "sd_uFMmF5OBgzfYIYBv",
+        "type": "Script",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.dataSource = new MatTableDataSource([\n  {\n    itemno: 1, itemid: 'SD344', itemname:' Shirt', category: ['zara','lousis phillips','peter england' ]}\n  ,\n]);",
+        "functionName": "sd_eJuzOUTYKNgXaqdz_1",
+        "category": "Function",
+        "x": 190,
+        "y": 270,
+        "wires": [
+            [
+                "sd_0LDE0itzoiKrFgWM"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_0LDE0itzoiKrFgWM",
+        "type": "PageVariables",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "tableData",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "dataSource"
+                }
+            }
+        ],
+        "functionName": "sd_E9QbOlnVduPNV5MO_1",
+        "category": "Function",
+        "x": 330,
+        "y": 270,
+        "wires": [
+            [
+                "sd_EcOBS6iWLLXnPklu"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_164JkRia7QavBFvO",
+        "type": "AfterViewInit",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "ngAfterViewInit",
+        "category": "Lifecycle Events",
+        "x": 65,
+        "y": 380,
+        "wires": [
+            [
+                "sd_qodZVArRyvRm92zf"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "addStockComponent"
+    },
+    {
+        "id": "sd_qodZVArRyvRm92zf",
+        "type": "ViewPicker",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "childViewVariables": [
+            {
+                "key": {
+                    "type": "literal",
+                    "value": "MatSort"
+                },
+                "defaultValue": "MatSort",
+                "isViewChildren": false
+            }
+        ],
+        "functionName": "sd_xKCCTWKzvgDN0rx7_1",
+        "category": "Function",
+        "x": 205,
+        "y": 380,
+        "wires": [
+            [
+                "sd_eOOEk1P9auNY7Zxf"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_eOOEk1P9auNY7Zxf",
+        "type": "Script",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "this.page.tableData.sort = this.MatSort;",
+        "functionName": "sd_2VNGqvcKee34lvOz_1",
+        "category": "Function",
+        "x": 345,
+        "y": 380,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_EcOBS6iWLLXnPklu",
+        "type": "ViewPicker",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "childViewVariables": [
+            {
+                "key": {
+                    "type": "literal",
+                    "value": "MatSort"
+                },
+                "defaultValue": "",
+                "isViewChildren": false
+            }
+        ],
+        "functionName": "sd_xKCCTWKzvgDN0rx7_2",
+        "category": "Function",
+        "x": 205,
+        "y": 500,
+        "wires": [
+            [
+                "sd_IXsmBYsS89o2VQQF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addStockComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_IXsmBYsS89o2VQQF",
+        "type": "Script",
+        "z": "sd_acIjEnZ8Rxizndhu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "scriptout",
+        "script": "this.page.tableData.sort = this.MatSort;",
+        "functionName": "scriptout",
+        "category": "Function",
+        "x": 345,
+        "y": 500,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addStockComponent",
+        "generated": true
+    }
+]

@@ -1,0 +1,160 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_2mWVXeNAgRYViubP",
+        "type": "tab",
+        "createdDate": "2022-12-30T04:25:50.456Z",
+        "label": "register",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "register",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_hnVgV04QZP2Bhdmn",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_2mWVXeNAgRYViubP",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "login input",
+        "path": "/register",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "post",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": true,
+        "dataModelIsArray": false,
+        "erd": "_DM_7xk3ge3t2",
+        "erdName": "stock",
+        "entity": "register",
+        "ref": "#/definitions/stock ~ register",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "sd_PsLbhbf18sMROjCo"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "register",
+        "functionName": "sd_hnVgV04QZP2Bhdmn"
+    },
+    {
+        "id": "sd_PsLbhbf18sMROjCo",
+        "type": "insert",
+        "z": "SSD_SERVICE_ID_sd_2mWVXeNAgRYViubP",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "erd": "_DM_7xk3ge3t2",
+        "entityId": "_EN_eccvoaja59",
+        "_UI_entityName": "register",
+        "dbConfigId": "sd_tiU3Q1ghCej28eZm",
+        "insertObject": "bh.input.body.register",
+        "resultMapping": "bh.local.result",
+        "functionName": "sd_PsLbhbf18sMROjCo",
+        "category": "Data Model",
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "sd_fOVIep8FwM8MRVJl"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "insertObject": {
+                "type": "bh.input",
+                "value": "body.register",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "register",
+        "generated": true
+    },
+    {
+        "id": "sd_fOVIep8FwM8MRVJl",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_2mWVXeNAgRYViubP",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "login out",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.result",
+            "send": "bh.local.result"
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "loginOut",
+        "category": "HTTP",
+        "x": 500,
+        "y": 140,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "register",
+        "generated": true
+    }
+]

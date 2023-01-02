@@ -1,0 +1,29 @@
+{
+    "/stock": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [
+                {
+                    "in": "body",
+                    "name": "addstock",
+                    "required": true,
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "addstock": {
+                                "$ref": "#/definitions/stock ~ addstock"
+                            }
+                        }
+                    }
+                }
+            ],
+            "responses": {},
+            "tags": [
+                "stock"
+            ]
+        }
+    }
+}

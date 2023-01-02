@@ -1,1 +1,1 @@
-# Inventroy-Billing
+# InventoryStock

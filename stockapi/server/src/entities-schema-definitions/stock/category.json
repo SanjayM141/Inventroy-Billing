@@ -1,0 +1,82 @@
+{
+    "name": "category",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "",
+    "type": "object",
+    "id": "_EN_6pcf9oglmg",
+    "y": 54.9375,
+    "properties": {
+        "category_id": {
+            "name": "category_id",
+            "format": "",
+            "type": "number",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_h6bdw8hvqu",
+                "nullable": false,
+                "dbType": "bigint",
+                "primary": true,
+                "placeholder": "",
+                "dbColName": "",
+                "constraints": {
+                    "primaryGenerated": true
+                }
+            }
+        },
+        "brand_name": {
+            "name": "brand_name",
+            "format": "",
+            "type": "string",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_brffxy3bg3",
+                "subCategoryType": null,
+                "nullable": false,
+                "dbType": "text",
+                "primary": false,
+                "placeholder": "",
+                "dbColName": "",
+                "constraints": {}
+            }
+        },
+        "size_id": {
+            "name": "size_id",
+            "format": "",
+            "type": "size",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_p5jjz9jcw",
+                "nullable": false,
+                "dbType": "bigint",
+                "primary": false,
+                "placeholder": "",
+                "dbColName": "",
+                "constraints": {},
+                "relation": {
+                    "type": "o2o",
+                    "targetEntity": "size",
+                    "joinColumnReferencedColumnName": "size_id",
+                    "joinColumnName": "size_id",
+                    "onUpdate": "",
+                    "onDelete": "",
+                    "relationId": "",
+                    "inverseSide": "size_id",
+                    "cascade": true,
+                    "userDrawn": true,
+                    "eager": true,
+                    "jsType": "number",
+                    "required": true
+                }
+            }
+        }
+    },
+    "required": [
+        "brand_name",
+        "size_id"
+    ],
+    "value": "",
+    "x": 509
+}

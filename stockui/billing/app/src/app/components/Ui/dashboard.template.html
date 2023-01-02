@@ -1,0 +1,16 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <mat-sidenav-container class="height-100" autosize="true" [hasBackdrop]="true">
+      <mat-sidenav #sidenav class="height-100" [mode]="&apos;side&apos;" [position]="&apos;start&apos;" [opened]="true" autoFocus="true" fixedInViewport="false">
+        <div fxLayout="row wrap" style="height: 24px" fxLayoutAlign="none center" [fxShow]="true">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <mat-icon style="margin-left: 40%" class="cursor">menu</mat-icon>
+            <div style="margin-bottom:-60%">
+              <button mat-button style="margin-top: 2vh;" class="d">Dashboard</button><button mat-button style="margin-top: 2vh;">Bill</button><button mat-button style="margin-top: 2vh;">View Orders</button><button mat-button style="margin-top: 2vh;" routerLink="/viewStock">View Stocks</button><button mat-button style="margin-top: 2vh;" routerLink="/addStock">Add Stocks</button>
+            </div>
+          </div>
+        </div>
+      </mat-sidenav>
+    </mat-sidenav-container>
+  </div>
+</div>
