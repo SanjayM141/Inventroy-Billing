@@ -165,7 +165,7 @@ export class stock {
 
   async sd_MIp5NYRjnqQqDvPQ(bh) {
     try {
-      bh.local.response = {
+      bh.local.query = {
         stock_name: bh.input.body.addstock.stock_name,
         brand_name: bh.input.body.addstock.brand_name,
         size_name: bh.input.body.addstock.size_name,
@@ -183,10 +183,10 @@ export class stock {
       bh.local.result = await MongoPersistance.getInstance().insertOne(
         'sd_M1DCivrmttLIrkiR',
         'billing',
-        bh.local.response,
+        bh.local.query,
         {}
       );
-      bh = await this.sd_wSOT0DsVYbu6W512(bh);
+      bh = await this.err_scpt(bh);
       //appendnew_next_sd_C5cjBppu3abLmXKr
       return bh;
     } catch (e) {
@@ -194,9 +194,27 @@ export class stock {
     }
   }
 
+  async err_scpt(bh) {
+    try {
+      bh.local.response = {
+        code: 'IB_001',
+        title: 'Add',
+        status: 200,
+        message: 'stock Added Sucessfully ',
+        hasError: false,
+        response: bh.local.result.ops,
+      };
+      bh = await this.sd_wSOT0DsVYbu6W512(bh);
+      //appendnew_next_err_scpt
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_SDYRLu25gTW5S18m');
+    }
+  }
+
   async sd_wSOT0DsVYbu6W512(bh) {
     try {
-      bh.web.res.status(200).send(bh.local.result.ops);
+      bh.web.res.status(200).send(bh.local.response);
 
       return bh;
     } catch (e) {

@@ -232,7 +232,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "bh.local.response = ({\n   stock_name: bh.input.body.addstock.stock_name,\n   brand_name:bh.input.body.addstock.brand_name,\n   size_name:bh.input.body.addstock.size_name\n});",
+        "script": "bh.local.query = ({\n   stock_name: bh.input.body.addstock.stock_name,\n   brand_name:bh.input.body.addstock.brand_name,\n   size_name:bh.input.body.addstock.size_name\n});",
         "functionName": "sd_MIp5NYRjnqQqDvPQ",
         "category": "Function",
         "x": 305,
@@ -312,7 +312,7 @@
         "headers": {},
         "responseBody": {
             "type": "bh.local",
-            "value": "result.ops",
+            "value": "response",
             "ssd_typedInputField": true
         },
         "httpcode": {
@@ -324,11 +324,10 @@
         "swaggerResponse": {},
         "responseMapping": {
             "status": 200,
-            "obj": "bh.local.result.ops",
-            "send": "bh.local.result.ops"
+            "obj": "bh.local.response",
+            "send": "bh.local.response"
         },
         "dataModelIsArray": false,
-        "cookies": [],
         "inputs": 1,
         "outputs": 0,
         "erd": "",
@@ -383,7 +382,7 @@
         "yAxis": "",
         "indexes": "",
         "docs": "",
-        "document": "bh.local.response",
+        "document": "bh.local.query",
         "newName": "",
         "doc": "",
         "filePath": "",
@@ -395,7 +394,7 @@
         "y": 300,
         "wires": [
             [
-                "sd_wSOT0DsVYbu6W512"
+                "sd_SDYRLu25gTW5S18m"
             ]
         ],
         "__ssdTypeInputs__": {
@@ -422,10 +421,32 @@
             },
             "document": {
                 "type": "bh.local",
-                "value": "response",
+                "value": "query",
                 "constant": false
             }
         },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_SDYRLu25gTW5S18m",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "err_scpt",
+        "script": "bh.local.response = {\n    code:\"IB_001\",\n    title:\"Add\",\n    status:200,\n    message:\"stock Added Sucessfully \",\n    hasError:false,\n    response:bh.local.result.ops\n}",
+        "functionName": "err_scpt",
+        "category": "Function",
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "sd_wSOT0DsVYbu6W512"
+            ]
+        ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
         "serviceName": "stock",
