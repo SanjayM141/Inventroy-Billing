@@ -1,0 +1,38 @@
+{
+    "name": "entity_1",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "",
+    "type": "object",
+    "id": "_EN_oblkd72rhb",
+    "y": 48,
+    "properties": {
+        "title": {
+            "name": "title",
+            "format": "",
+            "type": "string",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_ndm4uxogk1",
+                "nullable": false
+            }
+        },
+        "desc": {
+            "name": "desc",
+            "format": "",
+            "type": "string",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_fbqnqc3r4s",
+                "subCategoryType": null,
+                "nullable": false
+            }
+        }
+    },
+    "required": [
+        "desc"
+    ],
+    "value": "",
+    "x": 162
+}

@@ -1,4 +1,153 @@
 {
+    "9c72ab64-8bdf-bbdb-3cb5-ffda326fa07f": {
+        "paletteKey": "FlexLayoutCol",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "wrap",
+                "_value": "wrap",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "layoutAlign",
+                "_value": "start",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "stretch",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "48a93d6e-c64d-c370-28b2-607d451cc251": {
+            "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "9c72ab64-8bdf-bbdb-3cb5-ffda326fa07f",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxLayoutGap",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "wrap",
+                    "_value": "wrap",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "layoutAlign",
+                    "_value": "start",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "pLayoutAlign",
+                    "_value": "stretch",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ],
+            "a00f46ca-e5cc-cf68-3e15-7b53e5b7957d": {
+                "paletteKey": "NG-RouterOutlet",
+                "parentEditorKey": "48a93d6e-c64d-c370-28b2-607d451cc251",
+                "commentid": null,
+                "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Router Outlet",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "(activate)",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "(deactivate)",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    }
+                ]
+            }
+        }
+    },
     "3f94c73a-1b07-b09e-b50e-e4d6e4ebd7cb": {
         "paletteKey": "FlexLayoutRow",
         "commentid": null,
@@ -622,7 +771,6 @@
                                 "01e7361e-a500-5b35-7971-cdc2fba268dc": {
                                     "paletteKey": "NG-button",
                                     "parentEditorKey": "d2ca5630-143c-f50c-be31-601396bff998",
-                                    "isCommented": "false",
                                     "commentid": null,
                                     "designerReference": [
                                         {
@@ -802,7 +950,7 @@
                                         },
                                         {
                                             "_key": "routerLink",
-                                            "_value": "",
+                                            "_value": "/vieworder",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         }
@@ -864,7 +1012,7 @@
                                         },
                                         {
                                             "_key": "routerLink",
-                                            "_value": "/viewStock",
+                                            "_value": "/viewstock",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         }
@@ -926,7 +1074,7 @@
                                         },
                                         {
                                             "_key": "routerLink",
-                                            "_value": "/addStock",
+                                            "_value": "/addstock",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         }

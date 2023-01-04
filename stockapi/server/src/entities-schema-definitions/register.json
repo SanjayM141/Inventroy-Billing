@@ -1,9 +1,0 @@
-{
-    "_DM_0pfdkheok": {
-        "id": "_DM_0pfdkheok",
-        "name": "register",
-        "dbType": "dbModel",
-        "dbConfigId": "sd_xJfdKpEahhwMKVLl",
-        "dbName": "postgres"
-    }
-}

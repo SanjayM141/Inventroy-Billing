@@ -9,9 +9,9 @@
       <mat-sidenav #sidenav class="height-100" [mode]="&apos;side&apos;" [position]="&apos;start&apos;" [opened]="true" autoFocus="true" fixedInViewport="false">
         <div fxLayout="row wrap" style="height: 24px" fxLayoutAlign="none center" [fxShow]="true">
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <mat-icon style="margin-left: 40%" class="cursor">menu</mat-icon>
+            <mat-icon style="margin-left: 40%" class="cursor1">menu</mat-icon>
             <div>
-              <button mat-button style="position:sticky;">Dashboard</button><button mat-button>Bill</button><button mat-button>View Orders</button><button mat-button>View Stocks</button><button mat-button>Add Stocks</button>
+              <button mat-button style="margin-top: 2vh;">Dashboard</button><button mat-button style="margin-top: 2vh;">Bill</button><button mat-button style="margin-top: 2vh;">View Orders</button><button mat-button style="margin-top: 2vh;">View Stocks</button><button mat-button style="margin-top: 2vh;">Add Stocks</button>
             </div>
           </div>
         </div>
@@ -19,39 +19,96 @@
     </mat-sidenav-container>
   </div>
   <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-button style="margin-left: 38em;margin-top:2em" class="addbut">Add Items +</button></div>
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-button style="margin-left: 31em;margin-top:6em" class="addbut">Add Items +</button></div>
   </div>
   <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
     <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
       <div>
+        <div fxLayout="row wrap" style="position:sticky;margin-left:8em;margin-top:-26em" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div>
+            <b>Item.No</b>
+            <div>
 
-        <div fxLayout="column" class="table">
-          <table mat-table [dataSource]="page?.tableData" matSort class="table-width-fix">
-            <tr mat-header-row *matHeaderRowDef="[&apos;itemno&apos;,&apos;itemid&apos;,&apos;itemname&apos;,&apos;category&apos;]"></tr>
-            <tr mat-row *matRowDef="let row; columns: [&apos;itemno&apos;,&apos;itemid&apos;,&apos;itemname&apos;,&apos;category&apos;];"></tr>
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                <input matInput placeholder="Input" [required]="false">
 
-            <ng-container matColumnDef="itemno">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header>Item No.</th>
-              <td mat-cell *matCellDef="let table; let i = index;">{{table.itemno}}</td>
-            </ng-container>
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <b>Item ID</b>
+            <div>
 
-            <ng-container matColumnDef="itemid">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header>Item ID</th>
-              <td mat-cell *matCellDef="let table; let i = index;">{{table.itemid}}</td>
-            </ng-container>
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                <input matInput placeholder="Input" [required]="false">
 
-            <ng-container matColumnDef="itemname">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Name</th>
-              <td mat-cell *matCellDef="let table; let i = index;">{{table.itemname}}</td>
-            </ng-container>
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <b>ItemName</b>
+            <div>
 
-            <ng-container matColumnDef="category">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header>Category</th>
-              <td mat-cell *matCellDef="let table; let i = index;">{{table.category}}</td>
-            </ng-container>
-          </table>
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                <input matInput placeholder="Input" [required]="false">
+
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <b>Category</b>
+            <div>
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+                <mat-select placeholder="Select" [required]="false">
+                  <ng-template ngFor let-option [ngForOf] let-i="index">
+                    <mat-option [value]></mat-option>
+                  </ng-template>
+                </mat-select>
+
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <b>Brand</b>
+            <div>
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+                <mat-select placeholder="Select" [required]="false">
+                  <ng-template ngFor let-option [ngForOf] let-i="index">
+                    <mat-option [value]></mat-option>
+                  </ng-template>
+                </mat-select>
+
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <b>Size</b>
+            <div>
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+                <mat-select placeholder="Select" [required]="false">
+                  <ng-template ngFor let-option [ngForOf] let-i="index">
+                    <mat-option [value]></mat-option>
+                  </ng-template>
+                </mat-select>
+
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <b>Amount</b>
+            <div>
+
+              <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                <input matInput placeholder="Input" [required]="false">
+
+              </mat-form-field>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-button style="background-color:palegreen;margin-left: 40em;margin-top:-14em">Submit</button></div>
   </div>
 </div>

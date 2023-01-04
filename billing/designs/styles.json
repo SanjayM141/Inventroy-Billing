@@ -2,6 +2,8 @@
     "classes": [
         "height-100",
         "cursor",
+        "cursor1",
+        "cursor2",
         "addbut",
         "table",
         "table1",
@@ -12,6 +14,11 @@
         "version",
         "router_base",
         "router_content",
+        "card-con",
+        "card-form",
+        "card-forms",
+        "but",
+        "but1",
         "active-menu",
         "inactive-menu"
     ]

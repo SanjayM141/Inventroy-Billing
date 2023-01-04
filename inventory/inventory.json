@@ -1,0 +1,13 @@
+{
+    "displayName": "Inventory",
+    "appName": "inventory",
+    "description": "Stock description",
+    "lastModified": "2023-01-03T09:52:27.999Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2023-01-03T09:52:27.830Z",
+    "analyticsId": "e26027fa-f0f4-353e-9bcc-45eb850d2c6e",
+    "createdStudioVersion": "8.3.1"
+}

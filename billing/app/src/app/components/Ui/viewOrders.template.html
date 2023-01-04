@@ -1,0 +1,48 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <router-outlet></router-outlet>
+</div>
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <mat-sidenav-container class="height-100" autosize="true" [hasBackdrop]="true">
+    <mat-sidenav #sidenav class="height-100" [mode]="&apos;side&apos;" [position]="&apos;start&apos;" [opened]="true" autoFocus="true" fixedInViewport="false">
+      <div fxLayout="row wrap" style="height: 24px" fxLayoutAlign="none center" [fxShow]="true"></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <mat-icon style="margin-left: 40%" class="cursor2">menu</mat-icon>
+        <div>
+          <button mat-button style="margin-top: 2vh;">Dashboard</button><button mat-button style="margin-top: 2vh;">Bill</button><button mat-button style="margin-top: 2vh;">View Orders</button><button mat-button style="margin-top: 2vh;">View Stocks</button><button mat-button style="margin-top: 2vh;">Add Stocks</button>
+        </div>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="row wrap" style="margin-left:4em" fxLayoutAlign="start stretch" [fxShow]="true">
+      <h2 style="margin-top:5em">
+        View Orders By</h2>
+      <mat-slide-toggle [required]="true" [labelPosition]="&apos;after&apos;" style="margin-top:7.6em;margin-left:2em"> Brand</mat-slide-toggle>
+      <mat-slide-toggle [required]="true" [labelPosition]="&apos;after&apos;" style="margin-top:7.6em;margin-left:2em"> Category</mat-slide-toggle>
+      <mat-form-field style="margin-top:6.2em;margin-left:2em" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+        <mat-select matNativeControl placeholder="Select Month" [required]="false">
+          <mat-optgroup [label] [disabled]>
+            <mat-option matNativeControl [value]></mat-option>
+          </mat-optgroup>
+        </mat-select>
+
+      </mat-form-field>
+      <mat-form-field style="margin-top:6.2em;margin-left:2em" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+        <mat-select matNativeControl placeholder="Select Year" [required]="false">
+          <mat-optgroup [label] [disabled]>
+            <mat-option matNativeControl [value]></mat-option>
+          </mat-optgroup>
+        </mat-select>
+
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="row wrap" style="margin-top:15em;margin-left:-32em" fxLayoutAlign="start stretch" [fxShow]="true">
+    <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+      <input matInput placeholder="Search" [required]="false" autocomplete="off" (keyup)="onFilter_2($event)">
+      <mat-icon matSuffix>
+        <mat-icon class="search-icon">search</mat-icon>
+      </mat-icon>
+    </mat-form-field>
+  </div>
+</div>

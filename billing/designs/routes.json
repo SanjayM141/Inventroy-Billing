@@ -1,21 +1,37 @@
 {
     "routes": [
         {
-            "path": "dashboard",
-            "component": "dashboardComponent",
+            "path": "login",
+            "component": "loginComponent",
             "redirectTo": ""
         },
         {
-            "path": "addStock",
+            "path": "register",
+            "component": "registerComponent"
+        },
+        {
+            "path": "forgetpassword",
+            "component": "forgetpasswordComponent"
+        },
+        {
+            "path": "dashboard",
+            "component": "dashboardComponent"
+        },
+        {
+            "path": "addstock",
             "component": "addStockComponent"
         },
         {
-            "path": "viewStock",
+            "path": "viewstock",
             "component": "viewStockComponent"
         },
         {
+            "path": "vieworder",
+            "component": "viewOrdersComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "dashboard",
+            "redirectTo": "login",
             "pathMatch": "full",
             "default": true
         },

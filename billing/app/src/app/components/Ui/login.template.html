@@ -1,0 +1,26 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+  <form fxFlex="50" fxLayoutAlign="center center">
+    <div fxLayout="column wrap" class="card-con card-form" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true">
+      <p style="text-align:center;">
+        <b>LOGIN FORM</b>
+      </p>
+      <mat-form-field class="card-form" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Email" [required]="false">
+
+      </mat-form-field>
+      <mat-form-field class="card-form" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Password" [required]="false">
+
+      </mat-form-field>
+      <div fxLayout="row wrap" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true">
+        <p>
+          &#xA0;&#xA0;<a href="http://localhost:4200/register">Signup</a>
+
+          &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+
+          &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="http://localhost:4200/forgetpassword">Forgetpassword</a></p>
+      </div><button mat-button class="but" (click)="login_alert()" type="password" routerLink="/dashboard">SIGN IN</button>
+      <router-outlet></router-outlet>
+    </div>
+  </form>
+</div>

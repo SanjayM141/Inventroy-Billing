@@ -1,0 +1,42 @@
+{
+    "/addstock": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "stock"
+            ]
+        }
+    },
+    "/billstock": {
+        "post": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [
+                {
+                    "in": "body",
+                    "name": "addstock",
+                    "required": true,
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "addstock": {
+                                "$ref": "#/definitions/post ~ addstock"
+                            }
+                        }
+                    }
+                }
+            ],
+            "responses": {},
+            "tags": [
+                "stock"
+            ]
+        }
+    }
+}

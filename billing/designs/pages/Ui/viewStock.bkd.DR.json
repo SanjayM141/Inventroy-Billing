@@ -417,19 +417,115 @@
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }
+                        ]
+                    },
+                    "0ece3855-cea8-175e-6219-c0754cfc0cc5": {
+                        "paletteKey": "FlexLayoutCol",
+                        "parentEditorKey": "59f34e43-78e8-2459-5442-91d08237ad4e",
+                        "commentid": null,
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Column",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxFlex",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxLayoutGap",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "wrap",
+                                "_value": "wrap",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "layoutAlign",
+                                "_value": "start",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "pLayoutAlign",
+                                "_value": "stretch",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[fxShow]",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
                         ],
-                        "0ece3855-cea8-175e-6219-c0754cfc0cc5": {
-                            "paletteKey": "FlexLayoutCol",
-                            "parentEditorKey": "72fbc897-ae39-faf1-2fed-a1801e1883e8",
+                        "49ece6e5-cc7f-612d-eb47-d62965cf8ca5": {
+                            "paletteKey": "NG-icon",
+                            "parentEditorKey": "0ece3855-cea8-175e-6219-c0754cfc0cc5",
                             "commentid": null,
                             "designerReference": [
                                 {
-                                    "_key": "componentLabel",
-                                    "_value": "Column",
+                                    "_key": "style",
+                                    "_value": "margin-left: 40%",
                                     "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": [
+                                        "cursor2"
+                                    ],
+                                    "_type": "dav",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "IconName",
+                                    "_value": "menu",
+                                    "_type": "a",
                                     "_attrDef": "p",
                                     "_useAsLabel": true
                                 },
+                                {
+                                    "_key": "[inline]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "color",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        },
+                        "51abd9d7-8e07-3605-5dad-c6e852f3fb68": {
+                            "paletteKey": "Html5",
+                            "parentEditorKey": "0ece3855-cea8-175e-6219-c0754cfc0cc5",
+                            "isAdvancedComponent": true,
+                            "commentid": null,
+                            "designerReference": [
                                 {
                                     "_key": "style",
                                     "_value": "",
@@ -443,91 +539,244 @@
                                     "_attrDef": "p"
                                 },
                                 {
-                                    "_key": "fxFlex",
+                                    "_key": "htmlElement",
+                                    "_value": "div",
+                                    "_type": "dav",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "tagType",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "name",
                                     "_value": "",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_visibility": false
                                 },
                                 {
-                                    "_key": "fxLayoutGap",
+                                    "_key": "sandbox",
                                     "_value": "",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_visibility": false
                                 },
                                 {
-                                    "_key": "wrap",
-                                    "_value": "wrap",
-                                    "_type": "a",
-                                    "_attrDef": "p"
-                                },
-                                {
-                                    "_key": "layoutAlign",
-                                    "_value": "start",
-                                    "_type": "a",
-                                    "_attrDef": "p"
-                                },
-                                {
-                                    "_key": "pLayoutAlign",
-                                    "_value": "stretch",
-                                    "_type": "a",
-                                    "_attrDef": "p"
-                                },
-                                {
-                                    "_key": "[fxShow]",
-                                    "_value": "true",
+                                    "_key": "src",
+                                    "_value": "",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "srcdoc",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "width",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "[autoplay]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "[loop]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "data",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "audioSource",
+                                    "_value": [],
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "videoSource",
+                                    "_value": [],
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "audioDatasource",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "audioSrc",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "audioType",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "videoDatasource",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "videoSrc",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "videoType",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "(audioplay)",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "(videoplay)",
+                                    "_value": "",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "(audiopause)",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "(videopause)",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "(audioended)",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
+                                },
+                                {
+                                    "_key": "(videoended)",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p",
+                                    "_visibility": false
                                 }
                             ],
-                            "49ece6e5-cc7f-612d-eb47-d62965cf8ca5": {
-                                "paletteKey": "NG-icon",
-                                "parentEditorKey": "0ece3855-cea8-175e-6219-c0754cfc0cc5",
+                            "481274f1-b219-9f70-db65-c95dd019e6df": {
+                                "paletteKey": "NG-button",
+                                "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
                                 "commentid": null,
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "margin-left: 40%",
+                                        "_value": "margin-top: 2vh;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
                                         "_key": "class",
-                                        "_value": [
-                                            "cursor"
-                                        ],
+                                        "_value": "",
                                         "_type": "dav",
                                         "_attrDef": "p"
                                     },
                                     {
-                                        "_key": "IconName",
-                                        "_value": "menu",
+                                        "_key": "buttonname",
+                                        "_value": "Dashboard",
                                         "_type": "a",
                                         "_attrDef": "p",
                                         "_useAsLabel": true
-                                    },
-                                    {
-                                        "_key": "[inline]",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p"
                                     },
                                     {
                                         "_key": "color",
                                         "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "(click)",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
                                     }
                                 ]
                             },
-                            "51abd9d7-8e07-3605-5dad-c6e852f3fb68": {
-                                "paletteKey": "Html5",
-                                "parentEditorKey": "0ece3855-cea8-175e-6219-c0754cfc0cc5",
-                                "isAdvancedComponent": true,
+                            "dac008cd-4a97-db23-91ee-555d66e2b2ad": {
+                                "paletteKey": "NG-button",
+                                "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
                                 "commentid": null,
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "",
+                                        "_value": "margin-top: 2vh;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -538,484 +787,235 @@
                                         "_attrDef": "p"
                                     },
                                     {
-                                        "_key": "htmlElement",
-                                        "_value": "div",
-                                        "_type": "dav",
+                                        "_key": "buttonname",
+                                        "_value": "Bill",
+                                        "_type": "a",
                                         "_attrDef": "p",
                                         "_useAsLabel": true
                                     },
                                     {
-                                        "_key": "tagType",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "name",
+                                        "_key": "color",
                                         "_value": "",
                                         "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
+                                        "_attrDef": "p"
                                     },
                                     {
-                                        "_key": "sandbox",
+                                        "_key": "(click)",
                                         "_value": "",
                                         "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
+                                        "_attrDef": "p"
                                     },
                                     {
-                                        "_key": "src",
+                                        "_key": "[disabled]",
                                         "_value": "",
                                         "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
+                                        "_attrDef": "p"
                                     },
                                     {
-                                        "_key": "srcdoc",
+                                        "_key": "[disableRipple]",
                                         "_value": "",
                                         "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
+                                        "_attrDef": "p"
                                     },
                                     {
-                                        "_key": "width",
+                                        "_key": "type",
                                         "_value": "",
                                         "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
+                                        "_attrDef": "p"
                                     },
                                     {
-                                        "_key": "[autoplay]",
+                                        "_key": "routerLink",
                                         "_value": "",
                                         "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "[loop]",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "data",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "audioSource",
-                                        "_value": [],
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "videoSource",
-                                        "_value": [],
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "audioDatasource",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "audioSrc",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "audioType",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "videoDatasource",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "videoSrc",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "videoType",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "(audioplay)",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "(videoplay)",
-                                        "_value": "",
-                                        "_type": "a",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "(audiopause)",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "(videopause)",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "(audioended)",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
-                                    },
-                                    {
-                                        "_key": "(videoended)",
-                                        "_value": "",
-                                        "_type": "kv",
-                                        "_attrDef": "p",
-                                        "_visibility": false
+                                        "_attrDef": "p"
                                     }
-                                ],
-                                "481274f1-b219-9f70-db65-c95dd019e6df": {
-                                    "paletteKey": "NG-button",
-                                    "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
-                                    "commentid": null,
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "position:sticky;",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "",
-                                            "_type": "dav",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "buttonname",
-                                            "_value": "Dashboard",
-                                            "_type": "a",
-                                            "_attrDef": "p",
-                                            "_useAsLabel": true
-                                        },
-                                        {
-                                            "_key": "color",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "routerLink",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        }
-                                    ]
-                                },
-                                "dac008cd-4a97-db23-91ee-555d66e2b2ad": {
-                                    "paletteKey": "NG-button",
-                                    "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
-                                    "commentid": null,
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "",
-                                            "_type": "dav",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "buttonname",
-                                            "_value": "Bill",
-                                            "_type": "a",
-                                            "_attrDef": "p",
-                                            "_useAsLabel": true
-                                        },
-                                        {
-                                            "_key": "color",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "routerLink",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        }
-                                    ]
-                                },
-                                "d695260e-9750-8486-3fc3-091a8b34fb6a": {
-                                    "paletteKey": "NG-button",
-                                    "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
-                                    "commentid": null,
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "",
-                                            "_type": "dav",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "buttonname",
-                                            "_value": "View Orders",
-                                            "_type": "a",
-                                            "_attrDef": "p",
-                                            "_useAsLabel": true
-                                        },
-                                        {
-                                            "_key": "color",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "routerLink",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        }
-                                    ]
-                                },
-                                "7687eedc-6917-06de-bb37-baa7306cfdb0": {
-                                    "paletteKey": "NG-button",
-                                    "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
-                                    "commentid": null,
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "",
-                                            "_type": "dav",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "buttonname",
-                                            "_value": "View Stocks",
-                                            "_type": "a",
-                                            "_attrDef": "p",
-                                            "_useAsLabel": true
-                                        },
-                                        {
-                                            "_key": "color",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "routerLink",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        }
-                                    ]
-                                },
-                                "a0420094-3aa5-d16d-9385-0d906288197a": {
-                                    "paletteKey": "NG-button",
-                                    "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
-                                    "commentid": null,
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "",
-                                            "_type": "dav",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "buttonname",
-                                            "_value": "Add Stocks",
-                                            "_type": "a",
-                                            "_attrDef": "p",
-                                            "_useAsLabel": true
-                                        },
-                                        {
-                                            "_key": "color",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "routerLink",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        }
-                                    ]
-                                }
+                                ]
+                            },
+                            "d695260e-9750-8486-3fc3-091a8b34fb6a": {
+                                "paletteKey": "NG-button",
+                                "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
+                                "commentid": null,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "margin-top: 2vh;",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "dav",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "buttonname",
+                                        "_value": "View Orders",
+                                        "_type": "a",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
+                                    {
+                                        "_key": "color",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "(click)",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    }
+                                ]
+                            },
+                            "7687eedc-6917-06de-bb37-baa7306cfdb0": {
+                                "paletteKey": "NG-button",
+                                "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
+                                "commentid": null,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "margin-top: 2vh;",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "dav",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "buttonname",
+                                        "_value": "View Stocks",
+                                        "_type": "a",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
+                                    {
+                                        "_key": "color",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "(click)",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    }
+                                ]
+                            },
+                            "a0420094-3aa5-d16d-9385-0d906288197a": {
+                                "paletteKey": "NG-button",
+                                "parentEditorKey": "51abd9d7-8e07-3605-5dad-c6e852f3fb68",
+                                "commentid": null,
+                                "designerReference": [
+                                    {
+                                        "_key": "style",
+                                        "_value": "margin-top: 2vh;",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "dav",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "buttonname",
+                                        "_value": "Add Stocks",
+                                        "_type": "a",
+                                        "_attrDef": "p",
+                                        "_useAsLabel": true
+                                    },
+                                    {
+                                        "_key": "color",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "(click)",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disabled]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "[disableRipple]",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "type",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+                                        "_key": "routerLink",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    }
+                                ]
                             }
                         }
                     }
@@ -1884,7 +1884,7 @@
                 ]
             }
         },
-        "af90d5b2-16d0-8343-ca3c-bdbbd7a0beca": {
+        "4b4c7961-6615-45c2-39fb-050132acd9b4": {
             "paletteKey": "FlexLayoutRow",
             "parentEditorKey": "405fb71d-7793-f107-546f-7f2af722fe03",
             "commentid": null,
@@ -1898,7 +1898,7 @@
                 },
                 {
                     "_key": "style",
-                    "_value": "",
+                    "_value": "margin-top:12.5em;margin-left:-32em",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -1945,9 +1945,252 @@
                     "_attrDef": "p"
                 }
             ],
-            "9e3753d1-4d9a-871f-ff07-418299763dd5": {
+            "3f9fd2bb-2f60-ad38-deaf-b08a0fa9476c": {
+                "paletteKey": "NG-Input",
+                "parentEditorKey": "4b4c7961-6615-45c2-39fb-050132acd9b4",
+                "isAdvancedComponent": true,
+                "commentid": null,
+                "designerReference": [
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "dav",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "placeholder",
+                        "_value": "Search",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "value",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[appearance]",
+                        "_value": "'outline'",
+                        "_type": "a",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[required]",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[(ngModel)]",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "color",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "name",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "type",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[formControl]",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "readonly",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[disabled]",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "id",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[floatLabel]",
+                        "_value": "'auto'",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "[hideRequiredMarker]",
+                        "_value": "false",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_complexity": "advanced"
+                    },
+                    {
+                        "_key": "matError",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "inputHint",
+                        "_value": [],
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "Label",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "Suffix Icon",
+                        "_value": "<mat-icon class =\"search-icon\">search</mat-icon>",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "(suffixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "Prefix Icon",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "(prefixIconClick)",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "Prefix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "Suffix",
+                        "_value": "",
+                        "_type": "a",
+                        "_attrDef": "p",
+                        "_visibility": true
+                    },
+                    {
+                        "_key": "autocomplete",
+                        "_value": "off",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    },
+                    {
+                        "_key": "(keyup)",
+                        "_value": "onFilter_2($event)",
+                        "_type": "kv",
+                        "_attrDef": "c"
+                    }
+                ]
+            }
+        },
+        "ec78755a-9e7c-2c6e-346c-76f2fe8a3bda": {
+            "paletteKey": "FlexLayoutRow",
+            "parentEditorKey": "405fb71d-7793-f107-546f-7f2af722fe03",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Row",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "position:sticky;margin-top:5em;margin-left:20em;",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxLayoutGap",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "wrap",
+                    "_value": "wrap",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "layoutAlign",
+                    "_value": "start",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "pLayoutAlign",
+                    "_value": "stretch",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ],
+            "42da57c2-598c-7eb4-7a98-2770193003db": {
                 "paletteKey": "ng-table",
-                "parentEditorKey": "af90d5b2-16d0-8343-ca3c-bdbbd7a0beca",
+                "parentEditorKey": "ec78755a-9e7c-2c6e-346c-76f2fe8a3bda",
                 "isAdvancedComponent": true,
                 "commentid": null,
                 "designerReference": [
@@ -2007,9 +2250,9 @@
                         "_visibility": false
                     }
                 ],
-                "69936f0d-db7d-155b-5cae-45c0f09f495a": {
+                "04908496-7ff2-583c-20f6-756130341c4a": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [
@@ -2053,9 +2296,9 @@
                         }
                     ]
                 },
-                "99c92712-5736-70dd-f30d-844c7d66dcce": {
+                "8433dbff-c4d2-f385-2c5c-00af75812c89": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [
@@ -2099,9 +2342,9 @@
                         }
                     ]
                 },
-                "5dfc780b-2b39-9f22-b8f4-93872da4b030": {
+                "1a3e9540-1c0b-a45a-dd07-a2ae87fb1266": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [
@@ -2145,9 +2388,9 @@
                         }
                     ]
                 },
-                "b411e1ca-eda4-0b9f-b645-2559b6071dea": {
+                "2fcf9c2a-c31e-1899-4542-61bea4e14438": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [
@@ -2191,9 +2434,9 @@
                         }
                     ]
                 },
-                "0126686e-4771-1e92-dd81-d1603c4c0e21": {
+                "08ba16f0-8b36-1005-d62f-2a75159d9311": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [
@@ -2237,9 +2480,9 @@
                         }
                     ]
                 },
-                "46a69e94-a8b8-ebd5-2002-7f5a73032146": {
+                "79b99e4c-2f1d-578b-0788-8080dce3faf8": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [
@@ -2283,9 +2526,9 @@
                         }
                     ]
                 },
-                "8059f249-4912-d14f-9582-ec3682d52912": {
+                "0b21432a-b6f2-375b-132f-c371c7ffdb68": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [
@@ -2329,9 +2572,9 @@
                         }
                     ]
                 },
-                "8ef6ba58-fb7a-cca2-3bba-9ee72526acf8": {
+                "5e4a269b-8e63-2366-176b-d3333b29df29": {
                     "paletteKey": "ng-table-column",
-                    "parentEditorKey": "9e3753d1-4d9a-871f-ff07-418299763dd5",
+                    "parentEditorKey": "42da57c2-598c-7eb4-7a98-2770193003db",
                     "isAdvancedChildComponent": true,
                     "commentid": null,
                     "designerReference": [

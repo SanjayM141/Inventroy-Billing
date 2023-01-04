@@ -1,0 +1,100 @@
+[
+    {
+        "id": "sd_VVdwouXIPNVjSvP3",
+        "type": "tab",
+        "createdDate": "2023-01-02T09:02:19.328Z",
+        "label": "login",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "loginComponent"
+    },
+    {
+        "id": "sd_lNckxm66UZGInhmd",
+        "type": "OnInit",
+        "z": "sd_VVdwouXIPNVjSvP3",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_lNckxm66UZGInhmd",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_O37GrgAYZZIMqQcy"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "loginComponent"
+    },
+    {
+        "id": "sd_O37GrgAYZZIMqQcy",
+        "type": "PageVariables",
+        "z": "sd_VVdwouXIPNVjSvP3",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_O37GrgAYZZIMqQcy",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "loginComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_7fezz0Ta2Vf9BRog",
+        "type": "PageStart",
+        "z": "sd_VVdwouXIPNVjSvP3",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "login_alert",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "login_alert",
+        "category": "General",
+        "x": 45,
+        "y": 260,
+        "wires": [
+            [
+                "sd_b1I0tO90Q6jshfsF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "loginComponent"
+    },
+    {
+        "id": "sd_b1I0tO90Q6jshfsF",
+        "type": "Script",
+        "z": "sd_VVdwouXIPNVjSvP3",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "alert(\"user Login Successfully\")",
+        "functionName": "sd_b1I0tO90Q6jshfsF",
+        "category": "Function",
+        "x": 245,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "loginComponent",
+        "generated": true
+    }
+]

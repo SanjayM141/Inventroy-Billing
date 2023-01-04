@@ -12,13 +12,23 @@
     position: sticky;
     margin-top: 9em;
 }
+.cursor1{
+    cursor:pointer;
+    position: sticky;
+    margin-top: 13em;
+}
+.cursor2{
+    cursor:pointer;
+    position: sticky;
+    margin-top: 0em;
+}
 .addbut{
     background-color:blue;color:white;
 }
 .table{
      border: 1px solid black;
-     position:fixed;width: 25%;float:left;
-     margin-top: 5em;margin-left: -20em;
+     position:fixed;width: 55%;float:left;
+     margin-top: 9em;margin-left: -28em;
 }
 .table1{
      border: 1px solid black;
@@ -54,6 +64,39 @@
 .router_content{
     margin : 1%;
     margin-top: 2% ;
+}
+.card-con{
+
+  margin: 6rem;;
+
+}
+
+.card-form{
+
+    padding:0.5em;
+
+}
+
+.card-forms{
+
+    padding:0.2em;
+
+}
+
+.but{
+
+    color: white;
+
+    background-color: blue;
+
+}
+
+.but1{
+
+    color: black;
+
+    background-color:yellow;
+
 }
 
 

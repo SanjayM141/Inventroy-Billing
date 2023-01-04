@@ -8,7 +8,6 @@ import {
   Input,
   Output,
   EventEmitter,
-  AfterViewInit,
 } from '@angular/core'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
@@ -17,13 +16,13 @@ import { FormControl, Validators, FormBuilder } from '@angular/forms'; //_splitt
 //append_imports_end
 
 @Component({
-  selector: 'bh-addStock',
-  templateUrl: './addStock.template.html',
+  selector: 'bh-register',
+  templateUrl: './register.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class addStockComponent implements AfterViewInit {
+export class registerComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -41,7 +40,7 @@ export class addStockComponent implements AfterViewInit {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_RiSehgAurTWIkLjx(bh);
+      this.sd_mN8p6wMgFRPUPljM(bh);
     }
   }
 
@@ -55,27 +54,51 @@ export class addStockComponent implements AfterViewInit {
     //append_listeners
   }
 
-  sd_RiSehgAurTWIkLjx(bh) {
+  sd_mN8p6wMgFRPUPljM(bh) {
     try {
-      //appendnew_next_sd_RiSehgAurTWIkLjx
+      bh = this.sd_87lwFPVHYwSWSmRO(bh);
+      //appendnew_next_sd_mN8p6wMgFRPUPljM
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_RiSehgAurTWIkLjx');
+      return this.errorHandler(bh, e, 'sd_mN8p6wMgFRPUPljM');
     }
   }
 
-  ngAfterViewInit() {
+  register_alert(...others) {
     try {
       var bh: any = this.__page_injector__
         .get(SDPageCommonService)
         .constructFlowObject(this);
-      //appendnew_next_ngAfterViewInit
+      bh.input = {};
+      bh.local = {};
+      bh = this.sd_6hPbSgG12bxxzXj1(bh);
+      //appendnew_next_register_alert
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_164JkRia7QavBFvO');
+      return this.errorHandler(bh, e, 'sd_bHIlqhZDfRx9z4QM');
     }
   }
 
-  //appendnew_flow_addStockComponent_start
+  //appendnew_flow_registerComponent_start
+
+  sd_87lwFPVHYwSWSmRO(bh) {
+    try {
+      //appendnew_next_sd_87lwFPVHYwSWSmRO
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_87lwFPVHYwSWSmRO');
+    }
+  }
+
+  sd_6hPbSgG12bxxzXj1(bh) {
+    try {
+      const page = this.page;
+      alert('Registered Successfully');
+      //appendnew_next_sd_6hPbSgG12bxxzXj1
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_6hPbSgG12bxxzXj1');
+    }
+  }
 
   //appendnew_node
 
@@ -99,5 +122,5 @@ export class addStockComponent implements AfterViewInit {
       throw e;
     }
   }
-  //appendnew_flow_addStockComponent_Catch
+  //appendnew_flow_registerComponent_Catch
 }

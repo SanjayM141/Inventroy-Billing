@@ -1,0 +1,27 @@
+<div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true">
+  <form fxFlex="50" fxLayoutAlign="center center">
+    <div fxLayout="column wrap" class="card-con card-forms" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div>
+        <b>
+          <center>REGISTER PAGE</center>
+        </b>
+      </div>
+      <mat-form-field class="card-forms" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Username" [required]="false">
+
+      </mat-form-field>
+      <mat-form-field class="card-forms" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Email" [required]="false">
+
+      </mat-form-field>
+      <mat-form-field class="card-forms" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Password" [required]="false">
+
+      </mat-form-field>
+      <mat-form-field class="card-forms" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Repeat-password" [required]="false">
+
+      </mat-form-field><button mat-button class="but" (click)="register_alert()" routerLink="/login">SIGN UP</button>
+    </div>
+  </form>
+</div>

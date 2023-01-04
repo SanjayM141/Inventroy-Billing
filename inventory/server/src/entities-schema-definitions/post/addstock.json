@@ -1,0 +1,58 @@
+{
+    "name": "addstock",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "",
+    "type": "object",
+    "id": "_EN_3gh530mklb",
+    "y": 100,
+    "properties": {
+        "stock_name": {
+            "name": "stock_name",
+            "format": "",
+            "type": "string",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_db7eeeoyb6",
+                "subCategoryType": null,
+                "nullable": false
+            }
+        },
+        "brand_name": {
+            "name": "brand_name",
+            "format": "",
+            "type": "string",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_ow3kjqnhep",
+                "subCategoryType": null,
+                "nullable": false
+            }
+        },
+        "size_name": {
+            "name": "size_name",
+            "format": "",
+            "type": "string",
+            "description": "",
+            "default": "",
+            "__n__metadata__": {
+                "id": "_Att_7c4ipn29ra",
+                "subCategoryType": null,
+                "nullable": false
+            }
+        }
+    },
+    "required": [
+        "stock_name",
+        "brand_name",
+        "size_name"
+    ],
+    "value": "",
+    "x": 218,
+    "userList": {
+        "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y": [
+            "sd_1ZRPnP6XDYXpkpCR"
+        ]
+    }
+}

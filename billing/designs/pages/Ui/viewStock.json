@@ -227,6 +227,7 @@
         "nodeType": "flow",
         "name": "",
         "method": "get",
+        "methodMapping": "",
         "methodMappingObj": {},
         "urlMapping": "this.page./",
         "urlMappingObj": {
@@ -234,11 +235,14 @@
             "mapVarValue": "/"
         },
         "ret": "json",
+        "retMapping": "",
         "retMappingObj": {},
         "observe": "",
+        "observeMapping": "",
         "observeMappingObj": {},
         "reportProgress": false,
         "withCreds": false,
+        "reqBody": "",
         "reqBodyObj": {
             "mapVarType": "this.page",
             "mapVarValue": ""
@@ -250,9 +254,11 @@
         },
         "headers": {},
         "headersObj": [],
+        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
+        "paramMapping": "",
         "paramMappingObj": {},
         "functionName": "sd_AvwP7YsGiDDJjyeV",
         "category": "HTTP",

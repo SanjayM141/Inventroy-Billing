@@ -5,12 +5,11 @@
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
     <mat-sidenav-container class="height-100" autosize="true" [hasBackdrop]="true">
       <mat-sidenav #sidenav class="height-100" [mode]="&apos;side&apos;" [position]="&apos;start&apos;" [opened]="true" autoFocus="true" fixedInViewport="false">
-        <div fxLayout="row wrap" style="height: 24px" fxLayoutAlign="none center" [fxShow]="true">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <mat-icon style="margin-left: 40%" class="cursor">menu</mat-icon>
-            <div>
-              <button mat-button style="position:sticky;">Dashboard</button><button mat-button>Bill</button><button mat-button>View Orders</button><button mat-button>View Stocks</button><button mat-button>Add Stocks</button>
-            </div>
+        <div fxLayout="row wrap" style="height: 24px" fxLayoutAlign="none center" [fxShow]="true"></div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <mat-icon style="margin-left: 40%" class="cursor2">menu</mat-icon>
+          <div>
+            <button mat-button style="margin-top: 2vh;">Dashboard</button><button mat-button style="margin-top: 2vh;">Bill</button><button mat-button style="margin-top: 2vh;">View Orders</button><button mat-button style="margin-top: 2vh;">View Stocks</button><button mat-button style="margin-top: 2vh;">Add Stocks</button>
           </div>
         </div>
       </mat-sidenav>
@@ -38,7 +37,15 @@
 
     </mat-form-field>
   </div>
-  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="row wrap" style="margin-top:12.5em;margin-left:-32em" fxLayoutAlign="start stretch" [fxShow]="true">
+    <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+      <input matInput placeholder="Search" [required]="false" autocomplete="off" (keyup)="onFilter_2($event)">
+      <mat-icon matSuffix>
+        <mat-icon class="search-icon">search</mat-icon>
+      </mat-icon>
+    </mat-form-field>
+  </div>
+  <div fxLayout="row wrap" style="position:sticky;margin-top:5em;margin-left:20em;" fxLayoutAlign="start stretch" [fxShow]="true">
     <div fxLayout="column" class="table1">
       <table mat-table [dataSource]="page?.tableData" matSort class="table-width-fix">
         <tr mat-header-row *matHeaderRowDef="[&apos;itemid&apos;,&apos;itemname&apos;,&apos;category&apos;,&apos;brandname&apos;,&apos;size&apos;,&apos;amount&apos;,&apos;dateentered&apos;,&apos;timeenterd&apos;]"></tr>

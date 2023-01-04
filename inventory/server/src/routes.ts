@@ -1,0 +1,14 @@
+//CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-stock-SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y
+import { stock as SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y } from './sd-services/stock';
+
+
+
+export const UserRoutes = [
+
+    //CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY
+//CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY-stock-SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y
+SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y,
+
+];
+

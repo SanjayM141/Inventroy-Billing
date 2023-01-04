@@ -9,6 +9,8 @@ import {
   Output,
   EventEmitter,
   AfterViewInit,
+  ViewChild,
+  ViewChildren,
 } from '@angular/core'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
@@ -17,13 +19,13 @@ import { FormControl, Validators, FormBuilder } from '@angular/forms'; //_splitt
 //append_imports_end
 
 @Component({
-  selector: 'bh-addStock',
-  templateUrl: './addStock.template.html',
+  selector: 'bh-viewOrders',
+  templateUrl: './viewOrders.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class addStockComponent implements AfterViewInit {
+export class viewOrdersComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -41,7 +43,7 @@ export class addStockComponent implements AfterViewInit {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_RiSehgAurTWIkLjx(bh);
+      this.sd_dvTxQB6ncH5j5gz5(bh);
     }
   }
 
@@ -55,27 +57,26 @@ export class addStockComponent implements AfterViewInit {
     //append_listeners
   }
 
-  sd_RiSehgAurTWIkLjx(bh) {
+  sd_dvTxQB6ncH5j5gz5(bh) {
     try {
-      //appendnew_next_sd_RiSehgAurTWIkLjx
+      bh = this.sd_gDRW8YRdnatukIqi(bh);
+      //appendnew_next_sd_dvTxQB6ncH5j5gz5
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_RiSehgAurTWIkLjx');
+      return this.errorHandler(bh, e, 'sd_dvTxQB6ncH5j5gz5');
     }
   }
 
-  ngAfterViewInit() {
+  //appendnew_flow_viewOrdersComponent_start
+
+  sd_gDRW8YRdnatukIqi(bh) {
     try {
-      var bh: any = this.__page_injector__
-        .get(SDPageCommonService)
-        .constructFlowObject(this);
-      //appendnew_next_ngAfterViewInit
+      //appendnew_next_sd_gDRW8YRdnatukIqi
+      return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_164JkRia7QavBFvO');
+      return this.errorHandler(bh, e, 'sd_gDRW8YRdnatukIqi');
     }
   }
-
-  //appendnew_flow_addStockComponent_start
 
   //appendnew_node
 
@@ -99,5 +100,5 @@ export class addStockComponent implements AfterViewInit {
       throw e;
     }
   }
-  //appendnew_flow_addStockComponent_Catch
+  //appendnew_flow_viewOrdersComponent_Catch
 }

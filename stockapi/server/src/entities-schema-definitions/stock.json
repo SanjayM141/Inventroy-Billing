@@ -1,9 +1,0 @@
-{
-    "_DM_7xk3ge3t2": {
-        "id": "_DM_7xk3ge3t2",
-        "name": "stock",
-        "dbType": "dbModel",
-        "dbConfigId": "sd_tiU3Q1ghCej28eZm",
-        "dbName": "postgres"
-    }
-}

@@ -1,0 +1,100 @@
+[
+    {
+        "id": "sd_YwwOaTUw8F41cx5c",
+        "type": "tab",
+        "createdDate": "2023-01-02T09:21:16.463Z",
+        "label": "register",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "registerComponent"
+    },
+    {
+        "id": "sd_mN8p6wMgFRPUPljM",
+        "type": "OnInit",
+        "z": "sd_YwwOaTUw8F41cx5c",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_mN8p6wMgFRPUPljM",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_87lwFPVHYwSWSmRO"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "registerComponent"
+    },
+    {
+        "id": "sd_87lwFPVHYwSWSmRO",
+        "type": "PageVariables",
+        "z": "sd_YwwOaTUw8F41cx5c",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_87lwFPVHYwSWSmRO",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "registerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_6hPbSgG12bxxzXj1",
+        "type": "Script",
+        "z": "sd_YwwOaTUw8F41cx5c",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "alert(\"Registered Successfully\")",
+        "functionName": "sd_6hPbSgG12bxxzXj1",
+        "category": "Function",
+        "x": 265,
+        "y": 280,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "registerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_bHIlqhZDfRx9z4QM",
+        "type": "PageStart",
+        "z": "sd_YwwOaTUw8F41cx5c",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "register_alert",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "register_alert",
+        "category": "General",
+        "x": 145,
+        "y": 280,
+        "wires": [
+            [
+                "sd_6hPbSgG12bxxzXj1"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "registerComponent"
+    }
+]

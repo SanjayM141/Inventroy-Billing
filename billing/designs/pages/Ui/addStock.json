@@ -26,9 +26,7 @@
         "x": 65,
         "y": 270,
         "wires": [
-            [
-                "sd_uFMmF5OBgzfYIYBv"
-            ]
+            []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
@@ -41,20 +39,17 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "bh.local.dataSource = new MatTableDataSource([\n  {\n    itemno: 1, itemid: 'SD344', itemname:' Shirt', category: ['zara','lousis phillips','peter england' ]}\n  ,\n]);",
+        "script": "bh.local.dataSource = new MatTableDataSource([\n  {\n    itemno: 1, itemid: 'SB344', itemname:' Shirt', category:'T-Shirt', brand: 'ZARA',size:'M',amount:1299 }\n  ,\n  {\n    itemno: 1, itemid: 'SB237', itemname:' Shirt', category:'T-Shirt', brand: 'VanHuesan',size:'M',amount:2299 }\n  ,\n  {\n    itemno: 1, itemid: 'SB138', itemname:' Shirt', category:'Shirt', brand: 'POLO',size:'M',amount:599 }\n  ,\n  {\n    itemno: 1, itemid: 'SB007', itemname:' Shirt', category:'Shirt', brand: 'Allen Solly',size:'M',amount:450 }\n  ,\n]);",
         "functionName": "sd_eJuzOUTYKNgXaqdz_1",
         "category": "Function",
         "x": 190,
         "y": 270,
         "wires": [
-            [
-                "sd_0LDE0itzoiKrFgWM"
-            ]
+            []
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "addStockComponent",
-        "generated": true
+        "generateNext": true,
+        "serviceName": "addStockComponent"
     },
     {
         "id": "sd_0LDE0itzoiKrFgWM",
@@ -80,14 +75,11 @@
         "x": 330,
         "y": 270,
         "wires": [
-            [
-                "sd_EcOBS6iWLLXnPklu"
-            ]
+            []
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "addStockComponent",
-        "generated": true
+        "generateNext": true,
+        "serviceName": "addStockComponent"
     },
     {
         "id": "sd_164JkRia7QavBFvO",
@@ -101,9 +93,7 @@
         "x": 65,
         "y": 380,
         "wires": [
-            [
-                "sd_qodZVArRyvRm92zf"
-            ]
+            []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
@@ -132,14 +122,11 @@
         "x": 205,
         "y": 380,
         "wires": [
-            [
-                "sd_eOOEk1P9auNY7Zxf"
-            ]
+            []
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "addStockComponent",
-        "generated": true
+        "generateNext": true,
+        "serviceName": "addStockComponent"
     },
     {
         "id": "sd_eOOEk1P9auNY7Zxf",
@@ -157,9 +144,8 @@
             []
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "addStockComponent",
-        "generated": true
+        "generateNext": true,
+        "serviceName": "addStockComponent"
     },
     {
         "id": "sd_EcOBS6iWLLXnPklu",
@@ -184,14 +170,11 @@
         "x": 205,
         "y": 500,
         "wires": [
-            [
-                "sd_IXsmBYsS89o2VQQF"
-            ]
+            []
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "addStockComponent",
-        "generated": true
+        "generateNext": true,
+        "serviceName": "addStockComponent"
     },
     {
         "id": "sd_IXsmBYsS89o2VQQF",
@@ -209,8 +192,7 @@
             []
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "addStockComponent",
-        "generated": true
+        "generateNext": true,
+        "serviceName": "addStockComponent"
     }
 ]
