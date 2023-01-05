@@ -1328,7 +1328,7 @@
                         },
                         {
                             "_key": "text",
-                            "_value": "Brand",
+                            "_value": "Month",
                             "_type": "a",
                             "_attrDef": "p"
                         },
@@ -1426,7 +1426,7 @@
                         },
                         {
                             "_key": "text",
-                            "_value": "Category",
+                            "_value": "Year",
                             "_type": "a",
                             "_attrDef": "p"
                         },
@@ -1887,7 +1887,6 @@
         "16986a2f-fdd7-b924-ae8b-8c3bcc0c657b": {
             "paletteKey": "FlexLayoutRow",
             "parentEditorKey": "2d71b59b-dbc9-3829-8a7b-25eaf98942ef",
-            "isCommented": "false",
             "commentid": null,
             "designerReference": [
                 {
@@ -1950,7 +1949,6 @@
                 "paletteKey": "NG-Input",
                 "parentEditorKey": "16986a2f-fdd7-b924-ae8b-8c3bcc0c657b",
                 "isAdvancedComponent": true,
-                "isCommented": "false",
                 "commentid": null,
                 "designerReference": [
                     {

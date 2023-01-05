@@ -235,20 +235,172 @@
         "script": "bh.local.query = ({\n   stock_name: bh.input.body.addstock.stock_name,\n   brand_name:bh.input.body.addstock.brand_name,\n   size_name:bh.input.body.addstock.size_name\n});",
         "functionName": "sd_MIp5NYRjnqQqDvPQ",
         "category": "Function",
-        "x": 305,
-        "y": 300,
+        "x": 325,
+        "y": 240,
         "wires": [
-            [
-                "sd_C5cjBppu3abLmXKr"
-            ]
+            []
         ],
         "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "stock",
-        "generated": true
+        "generateNext": true,
+        "serviceName": "stock"
     },
     {
-        "id": "sd_1ZRPnP6XDYXpkpCR",
+        "id": "sd_wSOT0DsVYbu6W512",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "response",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": {
+                "type": "num",
+                "value": 200,
+                "ssd_typedInputField": true
+            },
+            "obj": {
+                "type": "bh.local",
+                "value": "response",
+                "ssd_typedInputField": true
+            },
+            "send": {
+                "type": "bh.local",
+                "value": "response",
+                "ssd_typedInputField": true
+            }
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_wSOT0DsVYbu6W512",
+        "category": "HTTP",
+        "x": 585,
+        "y": 220,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_C5cjBppu3abLmXKr",
+        "type": "Mongodb",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "databaseConfig": "sd_M1DCivrmttLIrkiR",
+        "collection": "\"billing\"",
+        "options": "",
+        "resultMapping": "bh.local.result",
+        "operation": "insertOne",
+        "argumentArray": [
+            "document"
+        ],
+        "aggregate": "",
+        "operations": "",
+        "query": "bh.local.response",
+        "fieldOrSpec": "",
+        "filter": "",
+        "key": "",
+        "docId": "",
+        "indexName": "",
+        "replacement": "",
+        "update": "",
+        "xAxis": "",
+        "yAxis": "",
+        "indexes": "",
+        "docs": "",
+        "document": "bh.local.query",
+        "newName": "",
+        "doc": "",
+        "filePath": "",
+        "fileName": "",
+        "pipeline": "",
+        "functionName": "sd_C5cjBppu3abLmXKr",
+        "category": "Storage",
+        "x": 425,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__ssdTypeInputs__": {
+            "collection": {
+                "type": "str",
+                "value": "billing",
+                "constant": false
+            },
+            "options": {
+                "type": "bh",
+                "value": "",
+                "nullable": "true",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "constant": false
+            },
+            "query": {
+                "type": "bh.local",
+                "value": "response",
+                "constant": false
+            },
+            "document": {
+                "type": "bh.local",
+                "value": "query",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_SDYRLu25gTW5S18m",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "err_scpt",
+        "script": "bh.local.response = {\n    code:\"IB_001\",\n    title:\"Add\",\n    status:200,\n    message:\"stock Added Sucessfully \",\n    hasError:false,\n    response:bh.local.result.ops\n}",
+        "functionName": "err_scpt",
+        "category": "Function",
+        "x": 505,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_oI9k8Zap2JOrWcbG",
         "type": "HttpIn",
         "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
         "viewType": "server",
@@ -266,14 +418,22 @@
         "acceptFileUpload": false,
         "useDataModel": true,
         "dataModelIsArray": false,
-        "uploadFileOptions": "",
         "erd": "_DM_3tu8xja3w",
         "erdName": "post",
         "entity": "addstock",
         "ref": "#/definitions/post ~ addstock",
         "editableListData": {
             "responses": [],
-            "params": [],
+            "params": [
+                {
+                    "key": "id",
+                    "desc": "Stock Id",
+                    "type": "query",
+                    "required": false,
+                    "rowId": "sd_ExDsM3byX1Y4x4bt",
+                    "valid": true
+                }
+            ],
             "produces": [],
             "consumes": []
         },
@@ -281,11 +441,11 @@
         "outputs": 1,
         "validateRequestUsingSwaggerDocs": false,
         "category": "HTTP",
-        "x": 185,
-        "y": 300,
+        "x": 165,
+        "y": 880,
         "wires": [
             [
-                "sd_MIp5NYRjnqQqDvPQ"
+                "sd_QoyXlyDLaOi0Yqnw"
             ]
         ],
         "__ssdTypeInputs__": {
@@ -300,10 +460,587 @@
         "__n_excludedFromValidation__": {},
         "generateNext": true,
         "serviceName": "stock",
-        "functionName": "sd_1ZRPnP6XDYXpkpCR"
+        "functionName": "sd_oI9k8Zap2JOrWcbG"
     },
     {
-        "id": "sd_wSOT0DsVYbu6W512",
+        "id": "sd_bg6ijd6hTT80Um4r",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "const{stock_name,brand_name,size_name } = bh.input.body.addstock;\n\nbh.local.updatequery = {\n   stock_name,\n   brand_name,\n   size_name\n};",
+        "functionName": "sd_bg6ijd6hTT80Um4r",
+        "category": "Function",
+        "x": 325,
+        "y": 1220,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_QMlYEmGkUHblHXYu",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.response = {\n    code:\"IB_001\",\n    title:\"Add\",\n    status:200,\n    message:\"stock Added Sucessfully \",\n    hasError:false,\n    response:bh.local.result.ops\n}",
+        "functionName": "sd_QMlYEmGkUHblHXYu",
+        "category": "Function",
+        "x": 685,
+        "y": 780,
+        "wires": [
+            [
+                "sd_fbBTfmLrmIaK6B4a"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_fgL13jdERkDoB2UM",
+        "type": "Mongodb",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "databaseConfig": "sd_M1DCivrmttLIrkiR",
+        "collection": "\"billing\"",
+        "options": "",
+        "resultMapping": "bh.local.result",
+        "operation": "insertOne",
+        "argumentArray": [
+            "document"
+        ],
+        "aggregate": "",
+        "operations": "",
+        "query": "bh.local.response",
+        "fieldOrSpec": "",
+        "filter": "",
+        "key": "",
+        "docId": "",
+        "indexName": "",
+        "replacement": "",
+        "update": "",
+        "xAxis": "",
+        "yAxis": "",
+        "indexes": "",
+        "docs": "",
+        "document": "bh.local.query",
+        "newName": "",
+        "doc": "",
+        "filePath": "",
+        "fileName": "",
+        "pipeline": "",
+        "functionName": "sd_fgL13jdERkDoB2UM",
+        "category": "Storage",
+        "x": 605,
+        "y": 760,
+        "wires": [
+            [
+                "sd_QMlYEmGkUHblHXYu"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "collection": {
+                "type": "str",
+                "value": "billing",
+                "constant": false
+            },
+            "options": {
+                "type": "bh",
+                "value": "",
+                "nullable": "true",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "constant": false
+            },
+            "query": {
+                "type": "bh.local",
+                "value": "response",
+                "constant": false
+            },
+            "document": {
+                "type": "bh.local",
+                "value": "query",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_fbBTfmLrmIaK6B4a",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.result",
+            "send": "bh.local.result"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_fbBTfmLrmIaK6B4a",
+        "category": "HTTP",
+        "x": 785,
+        "y": 780,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_yrpJ0CIgr0GiUAMh",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.response = {\n    code:\"IB_001\",\n    title:\"Add\",\n    status:200,\n    message:\"update Added Sucessfully \",\n    hasError:false,\n    response:bh.local.result.ops\n}",
+        "functionName": "sd_yrpJ0CIgr0GiUAMh",
+        "category": "Function",
+        "x": 705,
+        "y": 1200,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_cIiw7EMlk0IfzmAs",
+        "type": "Mongodb",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "databaseConfig": "sd_M1DCivrmttLIrkiR",
+        "collection": "\"billing\"",
+        "options": "",
+        "resultMapping": "bh.local.result",
+        "operation": "updateOne",
+        "argumentArray": [
+            "filter",
+            "update"
+        ],
+        "aggregate": "",
+        "operations": "",
+        "query": "bh.local.response",
+        "fieldOrSpec": "",
+        "filter": "bh.local.id",
+        "key": "",
+        "docId": "",
+        "indexName": "",
+        "replacement": "",
+        "update": "bh.local.updatequery",
+        "xAxis": "",
+        "yAxis": "",
+        "indexes": "",
+        "docs": "",
+        "document": "bh.local.query",
+        "newName": "",
+        "doc": "",
+        "filePath": "",
+        "fileName": "",
+        "pipeline": "",
+        "functionName": "sd_cIiw7EMlk0IfzmAs",
+        "category": "Storage",
+        "x": 545,
+        "y": 1200,
+        "wires": [
+            []
+        ],
+        "__ssdTypeInputs__": {
+            "collection": {
+                "type": "str",
+                "value": "billing",
+                "constant": false
+            },
+            "options": {
+                "type": "bh",
+                "value": "",
+                "nullable": "true",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "constant": false
+            },
+            "query": {
+                "type": "bh.local",
+                "value": "response",
+                "constant": false
+            },
+            "document": {
+                "type": "bh.local",
+                "value": "query",
+                "constant": false
+            },
+            "filter": {
+                "type": "bh.local",
+                "value": "id",
+                "constant": false
+            },
+            "update": {
+                "type": "bh.local",
+                "value": "updatequery",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_rwHr8VSLd1AVRnDG",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "const{stock_name,brand_name,size_name } = bh.input.body.addstock;\nconst ObjectId = require('mongodb').ObjectId;\n\nbh.local.id = {\n  //  \"_id\" : ObjectId('63b521a655a9941480f4ed5e') \n  \"_id\":bh.input.query.id\n}\nbh.local.updatequery = {\n\n$set:{\n     stock_name,\n       brand_name,\n      size_name\n    }}",
+        "functionName": "sd_rwHr8VSLd1AVRnDG",
+        "category": "Function",
+        "x": 425,
+        "y": 980,
+        "wires": [
+            [
+                "sd_SMZ1Z3yh6qVTEBvw"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_S8gaTw2NiJODpdGT",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.response = {\n    code:\"IB_001\",\n    title:\"Add\",\n    status:200,\n    message:\"update Added Sucessfully \",\n    hasError:false,\n    response:bh.local.result\n}",
+        "functionName": "sd_S8gaTw2NiJODpdGT",
+        "category": "Function",
+        "x": 645,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_VvBVTd773UQaQjJR"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_SMZ1Z3yh6qVTEBvw",
+        "type": "Mongodb",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "databaseConfig": "sd_M1DCivrmttLIrkiR",
+        "collection": "\"billing\"",
+        "options": "",
+        "resultMapping": "bh.local.result",
+        "operation": "findOneAndUpdate",
+        "argumentArray": [
+            "filter",
+            "update"
+        ],
+        "aggregate": "",
+        "operations": "",
+        "query": "bh.local.id",
+        "fieldOrSpec": "",
+        "filter": "bh.local.id",
+        "key": "",
+        "docId": "",
+        "indexName": "",
+        "replacement": "",
+        "update": "bh.local.updatequery",
+        "xAxis": "",
+        "yAxis": "",
+        "indexes": "",
+        "docs": "",
+        "document": "bh.local.query",
+        "newName": "",
+        "doc": "",
+        "filePath": "",
+        "fileName": "",
+        "pipeline": "",
+        "functionName": "sd_SMZ1Z3yh6qVTEBvw",
+        "category": "Storage",
+        "x": 525,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_S8gaTw2NiJODpdGT"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "collection": {
+                "type": "str",
+                "value": "billing",
+                "constant": false
+            },
+            "options": {
+                "type": "bh",
+                "value": "",
+                "nullable": "true",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "constant": false
+            },
+            "query": {
+                "type": "bh.local",
+                "value": "id",
+                "constant": false
+            },
+            "document": {
+                "type": "bh.local",
+                "value": "query",
+                "constant": false
+            },
+            "filter": {
+                "type": "bh.local",
+                "value": "id",
+                "constant": false
+            },
+            "update": {
+                "type": "bh.local",
+                "value": "updatequery",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_57C3V2efOtp2ZyB3",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "/update",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "put",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": true,
+        "dataModelIsArray": false,
+        "erd": "_DM_3tu8xja3w",
+        "erdName": "post",
+        "entity": "addstock",
+        "ref": "#/definitions/post ~ addstock",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 180,
+        "y": 1220,
+        "wires": [
+            []
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock",
+        "functionName": "sd_57C3V2efOtp2ZyB3"
+    },
+    {
+        "id": "sd_QoyXlyDLaOi0Yqnw",
+        "type": "Switch",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "body.addstock.stock_name",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.body.addstock.stock_name",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_QoyXlyDLaOi0Yqnw",
+        "category": "Function",
+        "x": 285,
+        "y": 880,
+        "wires": [
+            [
+                "sd_9NmDVOMZyJr9yj3T"
+            ],
+            [
+                "sd_rwHr8VSLd1AVRnDG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "stock",
+        "generated": true
+    },
+    {
+        "id": "sd_I1sKKs8QNWD89POe",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "scpt",
+        "script": "bh.local.result = \"stock already exists\"\n",
+        "functionName": "scpt",
+        "category": "Function",
+        "x": 345,
+        "y": 520,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_0A59NNArgDKK8hPy",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": {
+                "type": "num",
+                "value": 200,
+                "ssd_typedInputField": true
+            },
+            "obj": {
+                "type": "bh.local",
+                "value": "result",
+                "ssd_typedInputField": true
+            },
+            "send": {
+                "type": "bh.local",
+                "value": "result",
+                "ssd_typedInputField": true
+            }
+        },
+        "dataModelIsArray": false,
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_0A59NNArgDKK8hPy",
+        "category": "HTTP",
+        "x": 485,
+        "y": 500,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "stock"
+    },
+    {
+        "id": "sd_VvBVTd773UQaQjJR",
         "type": "HttpOut",
         "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
         "viewType": "server",
@@ -343,10 +1080,10 @@
             "headers": "Map",
             "cookies": "Map"
         },
-        "functionName": "sd_wSOT0DsVYbu6W512",
+        "functionName": "sd_VvBVTd773UQaQjJR",
         "category": "HTTP",
-        "x": 585,
-        "y": 300,
+        "x": 745,
+        "y": 1000,
         "wires": [],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
@@ -354,97 +1091,20 @@
         "generated": true
     },
     {
-        "id": "sd_C5cjBppu3abLmXKr",
-        "type": "Mongodb",
-        "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
-        "viewType": "server",
-        "nodeType": "flow",
-        "name": "",
-        "databaseConfig": "sd_M1DCivrmttLIrkiR",
-        "collection": "\"billing\"",
-        "options": "",
-        "resultMapping": "bh.local.result",
-        "operation": "insertOne",
-        "argumentArray": [
-            "document"
-        ],
-        "aggregate": "",
-        "operations": "",
-        "query": "bh.local.response",
-        "fieldOrSpec": "",
-        "filter": "",
-        "key": "",
-        "docId": "",
-        "indexName": "",
-        "replacement": "",
-        "update": "",
-        "xAxis": "",
-        "yAxis": "",
-        "indexes": "",
-        "docs": "",
-        "document": "bh.local.query",
-        "newName": "",
-        "doc": "",
-        "filePath": "",
-        "fileName": "",
-        "pipeline": "",
-        "functionName": "sd_C5cjBppu3abLmXKr",
-        "category": "Storage",
-        "x": 405,
-        "y": 300,
-        "wires": [
-            [
-                "sd_SDYRLu25gTW5S18m"
-            ]
-        ],
-        "__ssdTypeInputs__": {
-            "collection": {
-                "type": "str",
-                "value": "billing",
-                "constant": false
-            },
-            "options": {
-                "type": "bh",
-                "value": "",
-                "nullable": "true",
-                "constant": false
-            },
-            "resultMapping": {
-                "type": "bh.local",
-                "value": "result",
-                "constant": false
-            },
-            "query": {
-                "type": "bh.local",
-                "value": "response",
-                "constant": false
-            },
-            "document": {
-                "type": "bh.local",
-                "value": "query",
-                "constant": false
-            }
-        },
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "stock",
-        "generated": true
-    },
-    {
-        "id": "sd_SDYRLu25gTW5S18m",
+        "id": "sd_9NmDVOMZyJr9yj3T",
         "type": "Script",
         "z": "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y",
         "viewType": "common",
         "nodeType": "flow",
-        "name": "err_scpt",
-        "script": "bh.local.response = {\n    code:\"IB_001\",\n    title:\"Add\",\n    status:200,\n    message:\"stock Added Sucessfully \",\n    hasError:false,\n    response:bh.local.result.ops\n}",
-        "functionName": "err_scpt",
+        "name": "",
+        "script": "bh.local.query = ({\n   stock_name: bh.input.body.addstock.stock_name,\n   brand_name:bh.input.body.addstock.brand_name,\n   size_name:bh.input.body.addstock.size_name\n});",
+        "functionName": "sd_9NmDVOMZyJr9yj3T",
         "category": "Function",
-        "x": 500,
-        "y": 300,
+        "x": 485,
+        "y": 780,
         "wires": [
             [
-                "sd_wSOT0DsVYbu6W512"
+                "sd_fgL13jdERkDoB2UM"
             ]
         ],
         "__n_excludedFromValidation__": {},

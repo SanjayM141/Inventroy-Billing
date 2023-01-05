@@ -434,7 +434,10 @@ export default {
             "users": {
                 "SSD_SERVICE_ID_sd_bJh2KBeJaePiOi6Y": [
                     "sd_Cs957ftibYEjjcBM",
-                    "sd_C5cjBppu3abLmXKr"
+                    "sd_C5cjBppu3abLmXKr",
+                    "sd_fgL13jdERkDoB2UM",
+                    "sd_cIiw7EMlk0IfzmAs",
+                    "sd_SMZ1Z3yh6qVTEBvw"
                 ]
             }
         }
